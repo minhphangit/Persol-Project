@@ -1,0 +1,208 @@
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+a {
+  text-decoration: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* các thẻ màu chính */
+.main-color {
+  color: #81c8c2;
+}
+.bg-main-color {
+  background-color: #81c8c2;
+}
+.bg-footer-color {
+  background-color: #f8f8f8;
+}
+/* nav */
+.navbar-nav .nav-link {
+  color: #414141;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-size: 14px;
+  padding: 0 12px !important;
+}
+.search-nav {
+  font-size: 25px;
+}
+/* hover dropdown navbar */
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.navbar-nav .nav-link:hover {
+  color: #81c8c2;
+}
+.dropdown .blog-nav {
+  min-width: 200px;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  font-weight: 200;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #81c8c2;
+  color: #ffffff;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown:hover .dropbtn {
+  background-color: #ffffff;
+  color: #81c8c2;
+}
+/* search nav */
+.search-nav .badge {
+  padding: 2px 6px;
+  left: 28px;
+  top: 2px;
+}
+/* footer */
+section .policy-item {
+  padding: 20px;
+  color: #414141;
+  font-size: 18px;
+  text-align: left;
+}
+section .policy-item:hover,
+.footer-bottom .text-reset:hover {
+  color: #81c8c2 !important;
+}
+.footer-bottom p {
+  margin-bottom: 12px !important;
+}
