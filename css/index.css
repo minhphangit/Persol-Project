@@ -1,0 +1,125 @@
+/* text-slider */
+.text-slider {
+  width: 100%;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  background-color: #222222;
+  color: #eff5f5;
+}
+.text-slider .text-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  font-style: 12px;
+}
+/* slider */
+.slider .slider-left {
+  padding: 12px 0px 0px 24px;
+}
+.btn-buy-now {
+  top: 97%;
+  left: 52%;
+  transform: translate(-50%, -50%);
+}
+.slider .slider-left .left-img,
+.slider .slider-right img {
+  border-radius: 32px;
+}
+
+.slider .slider-right {
+  padding: 12px 24px 0px 12px;
+}
+/* List product */
+.list-product-top {
+  background-color: #81c8c2;
+  width: 100%;
+  height: 700px;
+  border-radius: 32px;
+  margin: 90px 0px;
+}
+.list-product-top .list-title {
+  color: #ffffff;
+  text-align: center;
+}
+/* slider list product */
+.list-product-top .list-product {
+  border-radius: 32px;
+}
+.list-product .card-body {
+  text-align: center;
+}
+.list-product .card-title {
+  font-size: 18px;
+  font-weight: 650;
+}
+.list-product .card-text {
+  font-size: 15px;
+  font-weight: 500;
+}
+.list-product .slider-item a:hover {
+  color: #81c8c2;
+}
+.list-product .price {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+.list-product .btn-success {
+  margin-top: 20px;
+}
+/* css slider */
+.list-product {
+  width: 100%;
+  height: auto;
+  position: relative;
+  border: 1px solid #ddd;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.slider-inner {
+  width: 9999%;
+  height: 100%;
+  list-style: none;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: all 0.75s ease;
+}
+
+.slider-item {
+  width: 22.66vw;
+  height: 100%;
+  float: left;
+}
+
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  color: #aaa;
+  text-decoration: none;
+  font-size: 2rem;
+  padding: 5px 3px;
+  background: white;
+  text-align: center;
+  transform: translateY(-50%);
+  transition: all 0.15s ease;
+  border: 1px solid #ddd;
+  border-radius: 0 3px 3px 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+#prev {
+  left: 0%;
+}
+
+#next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+#prev:hover,
+#next:hover {
+  color: #888;
+}
