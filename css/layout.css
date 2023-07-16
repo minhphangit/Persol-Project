@@ -133,6 +133,11 @@ table {
 .bg-footer-color {
   background-color: #f8f8f8;
 }
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: #81c8c2;
+}
 /* nav */
 .navbar-nav .nav-link {
   color: #414141;

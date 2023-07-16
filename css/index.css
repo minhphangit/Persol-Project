@@ -38,6 +38,13 @@
   border-radius: 32px;
   margin: 90px 0px;
 }
+.list-product-slider {
+  background-color: #bfe8e3;
+}
+.list-product-slider .badge-discount {
+  top: 0%;
+  left: 0%;
+}
 .list-product-top .list-title {
   color: #ffffff;
   text-align: center;
@@ -122,4 +129,12 @@
 #prev:hover,
 #next:hover {
   color: #888;
+}
+
+/* list-product-bottom */
+.list-product-bottom {
+  background-color: #81c8c2;
+  width: 100%;
+  height: 700px;
+  margin: 90px 0px;
 }
