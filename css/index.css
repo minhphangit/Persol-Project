@@ -18,7 +18,7 @@
   padding: 12px 0px 0px 24px;
 }
 .btn-buy-now {
-  top: 97%;
+  top: 93.5%;
   left: 52%;
   transform: translate(-50%, -50%);
 }
@@ -41,7 +41,7 @@
 .list-product-slider {
   background-color: #bfe8e3;
 }
-.list-product-slider .badge-discount {
+.badge-discount {
   top: 0%;
   left: 0%;
 }
@@ -53,25 +53,30 @@
 .list-product-top .list-product {
   border-radius: 32px;
 }
-.list-product .card-body {
+.card-body {
   text-align: center;
 }
-.list-product .card-title {
+.card-title {
   font-size: 18px;
   font-weight: 650;
 }
-.list-product .card-text {
+.card-text {
   font-size: 15px;
   font-weight: 500;
 }
-.list-product .slider-item a:hover {
+
+.card {
+  border-radius: 12px;
+}
+
+.slider-item a:hover {
   color: #81c8c2;
 }
-.list-product .price {
+.price {
   text-decoration: line-through;
   opacity: 0.5;
 }
-.list-product .btn-success {
+.btn-success {
   margin-top: 20px;
 }
 /* css slider */
@@ -135,6 +140,24 @@
 .list-product-bottom {
   background-color: #81c8c2;
   width: 100%;
-  height: 700px;
+  height: auto;
   margin: 90px 0px;
+}
+/* list product hot trend */
+.list-product-hottrend a:hover {
+  color: #81c8c2;
+}
+.card-img {
+  border-radius: 12px 12px 0px 0px;
+}
+/* Tìm kính phù hợp */
+.text-desc {
+  inline-size: 500px;
+  overflow-wrap: break-word;
+}
+.baner-choose-glass a:hover {
+  color: #81c8c2;
+}
+.baner-choose-glass .img-baner {
+  border-radius: 28px;
 }
