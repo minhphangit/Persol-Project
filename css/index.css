@@ -161,3 +161,45 @@
 .baner-choose-glass .img-baner {
   border-radius: 28px;
 }
+/* Vũ trụ truyền thông */
+.social-desc {
+  font-weight: 350;
+  line-height: 24px;
+}
+.social-link-fb,
+.social-link-ig,
+.social-link-tiktok {
+  width: 230px;
+  height: 200px;
+}
+.social-link-fb {
+  top: 23%;
+  left: 6%;
+  background-color: #0d8ef1;
+  width: 230px;
+  height: 200px;
+}
+.social-link-ig {
+  top: -12%;
+  left: 58%;
+  background-image: linear-gradient(
+    to top right,
+    #e9875f,
+    #d75b65,
+    #ca4b8c,
+    #b93f9a,
+    #a93894
+  );
+}
+.social-link-tiktok {
+  top: 60%;
+  left: 58%;
+  background-image: linear-gradient(
+    to top left,
+    #bc0102,
+    #450100,
+    #000000,
+    #003938,
+    #00afae
+  );
+}
