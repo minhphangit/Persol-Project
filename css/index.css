@@ -49,6 +49,10 @@
   color: #ffffff;
   text-align: center;
 }
+.list-title .right-title h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
 /* slider list product */
 .list-product-top .list-product {
   border-radius: 32px;
@@ -202,4 +206,10 @@
     #003938,
     #00afae
   );
+}
+
+/* HỎI ĐÁP Q & A CÙNG ANNA */
+.accordion-item .accordion-body p {
+  padding-top: 36px;
+  line-height: 24px;
 }

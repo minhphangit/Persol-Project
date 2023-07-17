@@ -39,10 +39,34 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
+    
+    <link rel="stylesheet" type="text/css" href="/css/base.css" />
     <!-- link css -->
     <link rel="stylesheet" href="/css/index.css" />
     <!-- link css -->
     <link rel="stylesheet" href="/css/layout.css" />
+    <script>
+      document.documentElement.className = "js";
+      var supportsCssVars = function () {
+        var e,
+          t = document.createElement("style");
+        return (
+          (t.innerHTML = "root: { --tmp-var: bold; }"),
+          document.head.appendChild(t),
+          (e = !!(
+            window.CSS &&
+            window.CSS.supports &&
+            window.CSS.supports("font-weight", "var(--tmp-var)")
+          )),
+          t.parentNode.removeChild(t),
+          e
+        );
+      };
+      supportsCssVars() ||
+        alert(
+          "Please view this demo in a modern browser that supports CSS Variables."
+        );
+    </script>
     <script src="/js/index.js"></script>
   </head>
   <body>
@@ -146,7 +170,7 @@
 
       <div
         id="carouselExampleSlidesOnly"
-        class="carousel slide"
+        class="carousel "
         data-bs-ride="carousel"
       >
         <div class="carousel-inner">
@@ -175,7 +199,7 @@
         <div class="col slider-right">
           <div
             id="carouselExampleAutoplaying"
-            class="carousel slide custom-carousel"
+            class="carousel custom-carousel"
             data-bs-ride="carousel"
           >
             <div class="carousel-inner">
@@ -935,6 +959,7 @@
                 Được thành lập từ năm 2015, trải qua hơn 8 năm phát triển kính mắt Anna đã, đang và sẽ chiếm vị trí không thể thiếu đối với các bạn trẻ. Cập nhật thông tin thời trang nhanh chóng và phù hợp với thị hiếu của khán giả thông qua các mạng xã hội như Facebook, Tiktok, Instagram, Youtube, kính mắt Anna là lựa chọn hàng đầu cho những ai muốn tận hưởng các bài viết, video vừa mang tính giải trí mà vẫn có đầy đủ thông tin cần thiết.</p>
             </div>
           </div>
+
           <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center position-relative pt-5 mt-3">
               <img class="z-0 img-fluid rounded-circle " style="width: 300px; height: 300px;" src="/img/social.jpg" alt="" />
                 <a href="#!" class="z-1 social-link-fb position-absolute text-start flex-column d-flex text-white ps-3 py-3 ">
@@ -955,14 +980,322 @@
                   <span>@kinhmatsunny</span>
                 </a>
           </div>
+
+          </div>
         </div>
-          
-          
+      </div>
+
+      <!-- Khách hàng thân yêu -->
+      <div class="list-product-bottom baner-choose-glass bg-white px-2">
+        <div
+          class="list-title d-flex justify-content-between pt-5 text-black ps-3 mb-5"
+        >
+          <div class="right-title">
+            <span class="pt-5">TÌNH THƯƠNG MẾN THƯƠNG</span>
+            <h1 class="pt-2">KHÁCH HÀNG THÂN YÊU</h1>
+          </div>
         </div>
 
-        
+        <body class="loading body-slider">
+          <svg class="hidden">
+            <symbol id="icon-arrow" viewBox="0 0 24 24">
+              <title>arrow</title>
+              <polygon
+                points="6.3,12.8 20.9,12.8 20.9,11.2 6.3,11.2 10.2,7.2 9,6 3.1,12 9,18 10.2,16.8 "
+              />
+            </symbol>
+            <symbol id="icon-drop" viewBox="0 0 24 24">
+              <title>drop</title>
+              <path
+                d="M12,21c-3.6,0-6.6-3-6.6-6.6C5.4,11,10.8,4,11.4,3.2C11.6,3.1,11.8,3,12,3s0.4,0.1,0.6,0.3c0.6,0.8,6.1,7.8,6.1,11.2C18.6,18.1,15.6,21,12,21zM12,4.8c-1.8,2.4-5.2,7.4-5.2,9.6c0,2.9,2.3,5.2,5.2,5.2s5.2-2.3,5.2-5.2C17.2,12.2,13.8,7.3,12,4.8z"
+              />
+              <path
+                d="M12,18.2c-0.4,0-0.7-0.3-0.7-0.7s0.3-0.7,0.7-0.7c1.3,0,2.4-1.1,2.4-2.4c0-0.4,0.3-0.7,0.7-0.7c0.4,0,0.7,0.3,0.7,0.7C15.8,16.5,14.1,18.2,12,18.2z"
+              />
+            </symbol>
+            <symbol id="icon-longarrow" viewBox="0 0 54 24">
+              <title>longarrow</title>
+              <path
+                d="M.42 11.158L12.38.256c.333-.27.696-.322 1.09-.155.395.166.593.467.593.903v6.977h38.87c.29 0 .53.093.716.28.187.187.28.426.28.716v5.98c0 .29-.093.53-.28.716a.971.971 0 0 1-.716.28h-38.87v6.977c0 .416-.199.717-.592.903-.395.167-.759.104-1.09-.186L.42 12.62a1.018 1.018 0 0 1 0-1.462z"
+              />
+            </symbol>
+            <symbol id="icon-navarrow" viewBox="0 0 408 408">
+              <title>navarrow</title>
+              <polygon
+                fill="#fff"
+                fill-rule="nonzero"
+                points="204 0 168.3 35.7 311.1 178.5 0 178.5 0 229.5 311.1 229.5 168.3 372.3 204 408 408 204"
+              ></polygon>
+            </symbol>
+          </svg>
+          <main>
+            <div class="slideshow">
+              <div class="slideshow__deco"></div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <div
+                    class="slide__img"
+                    style="background-image: url(img/h1.jpg)"
+                  ></div>
+                </div>
+                <div class="slide__side">Trâm anh</div>
+                <div class="slide__title-wrap">
+                  <span class="slide__number">1</span>
+                  <h3 class="slide__title">Trâm anh</h3>
+                  <h4 class="slide__subtitle"></h4>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <div
+                    class="slide__img"
+                    style="background-image: url(img/h2.jpg)"
+                  ></div>
+                </div>
+                <div class="slide__side">Vân Anh</div>
+                <div class="slide__title-wrap">
+                  <span class="slide__number">2</span>
+                  <h3 class="slide__title">Vân Anh</h3>
+                  <h4 class="slide__subtitle"></h4>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <div
+                    class="slide__img"
+                    style="background-image: url(img/h3.jpg)"
+                  ></div>
+                </div>
+                <div class="slide__side">Khánh Huyền</div>
+                <div class="slide__title-wrap">
+                  <span class="slide__number">3</span>
+                  <h3 class="slide__title">Khánh Huyền</h3>
+                  <h4 class="slide__subtitle"></h4>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <div
+                    class="slide__img"
+                    style="background-image: url(img/h4.webp)"
+                  ></div>
+                </div>
+                <div class="slide__side">Ngọc Matcha</div>
+                <div class="slide__title-wrap">
+                  <span class="slide__number">4</span>
+                  <h3 class="slide__title">Ngọc Matcha</h3>
+                  <h4 class="slide__subtitle"></h4>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <div
+                    class="slide__img"
+                    style="background-image: url(img/h5.webp)"
+                  ></div>
+                </div>
+                <div class="slide__side">Trần Vân</div>
+                <div class="slide__title-wrap">
+                  <span class="slide__number">5</span>
+                  <h3 class="slide__title">Trần Vân</h3>
+                  <h4 class="slide__subtitle"></h4>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="slide__img-wrap">
+                  <div
+                    class="slide__img"
+                    style="background-image: url(img/h6.jpg)"
+                  ></div>
+                </div>
+                <div class="slide__side">Bảo An & Gia Khiêm</div>
+                <div class="slide__title-wrap">
+                  <span class="slide__number">6</span>
+                  <h3 class="slide__title">Bảo An & Gia Khiêm</h3>
+                  <h4 class="slide__subtitle"></h4>
+                </div>
+              </div>
+              <button class="nav nav--prev">
+                <svg class="icon icon--navarrow-prev ">
+                  <use xlink:href="#icon-navarrow"></use>
+                </svg>
+              </button>
+              <button class="nav nav--next">
+                <svg class="icon icon--navarrow-next">
+                  <use xlink:href="#icon-navarrow"></use>
+                </svg>
+              </button>
+            </div>
+            <div class="content">
+              <div class="content__item">
+                <span class="content__number">1</span>
+                <h3 class="content__title">Trâm anh</h3>
+                <h4 class="content__subtitle"></h4>
+                <div class="content__text"></div>
+              </div>
+              <div class="content__item">
+                <span class="content__number">2</span>
+                <h3 class="content__title">Vanh</h3>
+                <h4 class="content__subtitle"></h4>
+                <div class="content__text"></div>
+              </div>
+              <div class="content__item">
+                <span class="content__number">3</span>
+                <h3 class="content__title">Khánh Huyền</h3>
+                <h4 class="content__subtitle"></h4>
+                <div class="content__text"></div>
+              </div>
+              <div class="content__item">
+                <span class="content__number">4</span>
+                <h3 class="content__title">Ngọc Matcha</h3>
+                <h4 class="content__subtitle"></h4>
+                <div class="content__text"></div>
+              </div>
+              <div class="content__item">
+                <span class="content__number">5</span>
+                <h3 class="content__title">Trần Vân</h3>
+                <h4 class="content__subtitle"></h4>
+                <div class="content__text"></div>
+              </div>
+              <div class="content__item">
+                <span class="content__number">6</span>
+                <h3 class="content__title">Bảo An & Gia Khiêm</h3>
+                <h4 class="content__subtitle"></h4>
+                <div class="content__text"></div>
+              </div>
+              <button class="content__close">
+                <svg class="icon icon--longarrow">
+                  <use xlink:href="#icon-longarrow"></use>
+                </svg>
+              </button>
+            </div>
+          </main>
+          <script src="js/imagesloaded.pkgd.min.js"></script>
+          <script src="js/charming.min.js"></script>
+          <script src="js/TweenMax.min.js"></script>
+          <script src="js/demo.js"></script>
+        </body>
+      </div>
 
-        
+      <!-- Hỏi đáp Q & A CÙNG ANNA -->
+      <div class="list-product-bottom baner-choose-glass bg-white px-2">
+        <div
+          class="list-title d-flex justify-content-between pt-5 text-black ps-3"
+        >
+          <div class="right-title">
+            <span class="pt-5 d-flex align-content-center"> 
+              <i class="fa-solid fa-minus fs-2 me-3"></i>
+              <span class="pt-2">HỎI ĐÁP</span>
+            </span>
+            <h1 class="pt-2">Q & A CÙNG ANNA</h1>
+          </div>
+        </div>
+
+        <div class="row mt-5">
+
+          <div class="col-12 col-md-12 col-lg-6">
+            <div class="accordion border border-3 rounded" id="accordionPanelsStayOpenExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold py-4 fs-5" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                    Cận thị có tự giảm không?
+                  </button>
+                </h2>
+                <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show">
+                  <div class="accordion-body">
+                    <p >
+                      Đáng tiếc câu trả lời là KHÔNG. Cận thị do 2 nguyên nhân <br>
+                      – Mắt chiều trước-sau dài hơn bình thường (cận thị do trục)<br>
+                      – Giác mạc và/hoặc thể thuỷ tinh cong nhiều quá (cận thị do tật khúc xạ)<br>
+                       Mắt đã dài thì không thể ngắn lại. Giác mạc/thể thủy tinh quá cong cũng không thể tự nhiên trở lại như cũ. Vì thế nên, khi đã cận thì không thể tự giảm độ, chỉ có thể giữ cho hạn chế tăng độ mà thôi
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion border border-3 rounded my-5" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold py-4 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Vừa loạn vừa cận có cắt tròng đổi màu được không ?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Hiện tại hệ thống kính mắt Anna có rất nhiều tròng đổi mầu cho các bạn vừa cận vừa loạn nhé bạn ơi.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion border border-3 rounded" id="accordionExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header">
+                  <button class="accordion-button fw-bold py-4 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Em thấy có quảng cáo thuốc làm giảm độ cận thị mà?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                  <div class="accordion-body">
+                    <p>Có 2 thứ đừng nên tin trên đời này: đó là đàn ông và quảng cáo</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="col-12 col-md-12 col-lg-6">
+              <div class="accordion border border-3 rounded" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-4 fs-5  collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                      Cho em xin chi phí đo mắt bên mình nhé ?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>Hệ thống kính mắt Anna luôn miễn phí kiểm tra mắt nhé các bạn thân yêu ơi.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion border border-3 rounded my-5" id="accordionFlushExample">
+                 <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button fw-bold py-4 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                        Mặt tròn bự thì đeo kính gì đẹp ạ ?
+                      </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                      <div class="accordion-body">
+                        <p>Với khuôn mặt tròn, hãy lựa chọn các dáng kính là <strong>hình vuông hoặc hình chữ nhật</strong>. Với kiểu dáng này sẽ giúp cân bằng cấu trúc cho khuôn mặt, giúp mặt trông thon thả, thanh thoát và mềm mại hơn nhé bạn ơi.</p>
+                      </div>
+                    </div>
+                  </div>
+              </div>
+
+              <div class="accordion border border-3 rounded" id="accordionFlushExample">
+                <div class="accordion-item">
+                  <h2 class="accordion-header">
+                    <button class="accordion-button fw-bold py-4 fs-5 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                      Màu của kính râm có ảnh hưởng tới chống tia cực tím không ?
+                    </button>
+                  </h2>
+                  <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <p>
+                        Mức độ tối màu của thấu kính không ảnh hưởng đến tác dụng bảo vệ mắt khỏi tia cực tím. Thay vào đó, khả năng này được xác định bằng công nghệ sản xuất thấu kính hoặc loại polyme nhựa của thấu kính nhé bạn ơi
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+        </div>
       </div>
     </main>
     <!-- Footer -->
