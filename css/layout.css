@@ -210,3 +210,13 @@ section .policy-item:hover,
 .footer-bottom p {
   margin-bottom: 12px !important;
 }
+/* Responesive */
+/* mobile */
+@media only screen and (max-width: 767px) {
+  .policy {
+    padding: 0 !important;
+  }
+  .policy-item {
+    font-size: 12px !important;
+  }
+}

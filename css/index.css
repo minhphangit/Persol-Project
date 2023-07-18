@@ -14,11 +14,13 @@
   font-style: 12px;
 }
 /* slider */
-.slider .slider-left {
-  padding: 12px 0px 0px 24px;
+.slider .slider-left,
+.slider .slider-right {
+  padding: 12px;
 }
+
 .btn-buy-now {
-  top: 93.5%;
+  top: 95%;
   left: 52%;
   transform: translate(-50%, -50%);
 }
@@ -27,9 +29,6 @@
   border-radius: 32px;
 }
 
-.slider .slider-right {
-  padding: 12px 24px 0px 12px;
-}
 /* List product */
 .list-product-top {
   background-color: #81c8c2;
@@ -45,6 +44,10 @@
   top: 0%;
   left: 0%;
 }
+.badge-discount-slider {
+  top: 0%;
+  left: 4.5%;
+}
 .list-product-top .list-title {
   color: #ffffff;
   text-align: center;
@@ -52,6 +55,9 @@
 .list-title .right-title h1 {
   font-weight: 700;
   font-size: 36px;
+}
+.btn-add-cart {
+  margin-top: 12px;
 }
 /* slider list product */
 .list-product-top .list-product {
@@ -80,9 +86,7 @@
   text-decoration: line-through;
   opacity: 0.5;
 }
-.btn-success {
-  margin-top: 20px;
-}
+
 /* css slider */
 .list-product {
   width: 100%;
@@ -95,7 +99,7 @@
 
 .slider-inner {
   width: 9999%;
-  height: 100%;
+  height: auto;
   list-style: none;
   left: 0;
   margin: 0;
@@ -165,6 +169,7 @@
 .baner-choose-glass .img-baner {
   border-radius: 28px;
 }
+
 /* Vũ trụ truyền thông */
 .social-desc {
   font-weight: 350;
@@ -212,4 +217,51 @@
 .accordion-item .accordion-body p {
   padding-top: 36px;
   line-height: 24px;
+}
+/* Responesive */
+/* mobile */
+@media only screen and (max-width: 767px) {
+  .btn-buy-now {
+    transform: scale(0.5);
+    top: 90%;
+    left: 34%;
+  }
+  .choose-glass-text {
+    transform: scale(0.6);
+    order: 2;
+  }
+  .choose-glass-img {
+    order: 1;
+  }
+  .store-img {
+    margin-top: 8px;
+  }
+  .btn-search-store {
+    margin: auto !important;
+  }
+  .store-title {
+    font-size: 22px !important;
+  }
+  .social-desc {
+    text-align: justify;
+  }
+  .social-link {
+    transform: scale(0.5);
+  }
+  .answer-sunny {
+    transform: scale(0.8);
+  }
+}
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .choose-glass-text,
+  .social-link {
+    transform: scale(0.8);
+  }
+  .store-img {
+    margin-top: 8px;
+  }
+  .store-title {
+    font-size: 32px !important;
+  }
 }
